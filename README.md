@@ -1,4 +1,4 @@
-# 💸 Bufunfa – Fintech Fullstack
+# Bufunfa – Fintech Fullstack
 
 Aplicação **fullstack de gestão financeira** desenvolvida com **Java (Spring Boot)**, **Oracle Database** e **ReactJS**, estruturada com arquitetura em camadas e integração completa via APIs REST.
 
@@ -6,7 +6,7 @@ O sistema permite o gerenciamento de **contas, categorias e transações finance
 
 ---
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
 Consolidar práticas de desenvolvimento fullstack aplicando:
 
@@ -20,7 +20,7 @@ O projeto serve como base para evolução de funcionalidades voltadas a fintechs
 
 ---
 
-## 🎨 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 - Autenticação (Login)
 - Dashboard inicial
@@ -35,7 +35,7 @@ O projeto serve como base para evolução de funcionalidades voltadas a fintechs
 
 ---
 
-## 🧱 Arquitetura
+## Arquitetura
 
 O projeto foi estruturado seguindo boas práticas de separação de responsabilidades.
 
@@ -48,7 +48,7 @@ Arquitetura em camadas:
 - **Service** – Regras de negócio
 - **Controller** – Endpoints REST
 
-### 🌐 Endpoints REST
+### Endpoints REST
 
 Implementação completa com verbos HTTP adequados:
 
@@ -61,7 +61,7 @@ Integração com **Oracle Database** via **JPA/Hibernate**.
 
 ---
 
-### 🔹 Frontend (React)
+### Frontend (React)
 
 Aplicação SPA estruturada com:
 
@@ -73,7 +73,7 @@ Aplicação SPA estruturada com:
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Backend
 - Java 21
@@ -90,9 +90,9 @@ Aplicação SPA estruturada com:
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
-### 🔧 Backend
+### Backend
 
 1. Configure o arquivo `application.properties` com suas credenciais locais:
 
@@ -112,7 +112,7 @@ Backend disponível em:
 http://localhost:8080
 
 
-### 💻 Frontend
+### Frontend
 
 npm install
 npm run dev
@@ -121,10 +121,10 @@ Frontend disponível em:
 
 http://localhost:5173
 
-⚠️ Requisito: Node.js versão 20 ou superior.
+**Requisito: Node.js versão 20 ou superior.**
 
 
-### 🔑 Usuário de Teste
+### Usuário de Teste
 
 Email: douglas111@gmail.com
 
