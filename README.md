@@ -97,7 +97,7 @@ Aplicação SPA estruturada com:
 1. Configure o arquivo `application.properties` com suas credenciais locais:
 
 `properties
-spring.datasource.url=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+spring.datasource.url=jdbc:oracle:thin:@SEU_HOST:PORTA:SID
 spring.datasource.username=SEU_USUARIO
 spring.datasource.password=SUA_SENHA
 spring.jpa.hibernate.ddl-auto=update
