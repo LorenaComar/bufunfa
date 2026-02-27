@@ -39,7 +39,7 @@ O projeto serve como base para evolução de funcionalidades voltadas a fintechs
 
 O projeto foi estruturado seguindo boas práticas de separação de responsabilidades.
 
-### 🔹 Backend (Spring Boot)
+### Backend (Spring Boot)
 
 Arquitetura em camadas:
 
