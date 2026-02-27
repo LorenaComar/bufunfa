@@ -1,0 +1,140 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ===== ESTILOS PARA O CATEGORYDASHBOARD ===== */
+
+/* Espaçamento entre elementos */
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+/* Cores de fundo suaves */
+.bg-success-soft {
+  background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+.bg-danger-soft {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+}
+
+.bg-warning-soft {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+/* Progress bars personalizadas */
+.progress {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Cards hover effects */
+.bufunfa-card-base {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bufunfa-card-base:hover {
+  transform: translateY(-2px);
+}
+
+/* Botões personalizados */
+.btn-outline-bufunfa {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-bufunfa:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Estilos para textos */
+.text-muted-bf {
+  color: #6c757d !important;
+}
+
+/* Grid responsivo para dashboard */
+.dashboard-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Animações suaves */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll personalizado */
+.dashboard-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard-container::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.dashboard-container::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .bufunfa-card-base {
+    margin-bottom: 1rem;
+  }
+}

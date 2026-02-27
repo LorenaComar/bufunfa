@@ -1,0 +1,184 @@
+/* ===== Banco Bufunfa - Tema Escuro Fixo ===== */
+:root {
+  --bg: #000;
+  --card: #1a1a1a;
+  --border: #333;
+
+  --fg: #f4f4f4;
+  --muted: #aaa;
+  --accent: #ffb703;
+
+  --light-bg: #fff;
+  --dark-text: #000;
+}
+
+/* ===== Base ===== */
+html, body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===== Cards ===== */
+.bufunfa-card-base {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  width: 100%;
+  color: var(--fg);
+}
+
+/* ===== Textos ===== */
+.title-accent { color: var(--accent); }
+.text-muted-bf { color: var(--muted); }
+
+/* ===== Navbar ===== */
+.bufunfa-navbar-base {
+  background-color: #0f0f0f;
+  border-top: 2px solid var(--accent);
+  backdrop-filter: blur(6px);
+}
+
+.bufunfa-nav-item-base {
+  color: color-mix(in oklab, var(--fg) 70%, var(--bg));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .8rem;
+  text-decoration: none;
+  gap: .25rem;
+  padding: .4rem 0;
+}
+.bufunfa-nav-item-base.active,
+.bufunfa-nav-item-base:hover {
+  color: var(--accent);
+}
+
+/* ===== Centralização geral ===== */
+.container-int {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.container-int > section,
+.container-int > .BalanceCard,
+.container-int > .QuickActions,
+.container-int > .Categories,
+.container-int > .Transactions {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section { margin-bottom: 1.5rem; }
+
+@media (max-width: 768px) {
+  .container-int > section { max-width: 95%; }
+}
+
+/* ===== Login e Cadastro (blindado) ===== */
+.auth-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+/* card base do auth */
+.auth-card {
+  width: 100%;
+  max-width: 480px;            /* pode aumentar de 420 → 480 */
+  min-width: 320px;            /* >>> evita “tirinha” vertical <<< */
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+
+.auth-card .card-body {
+  padding: 20px 22px;
+}
+
+/* inputs do login/cadastro */
+.login-input, .rg-input, .form-control {
+  width: 100%;
+  background: #121212;
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+.login-input::placeholder, .rg-input::placeholder { color: #bfbfbf; }
+.login-input:focus, .rg-input:focus, .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgba(255,183,3,.15);
+}
+
+/* botão */
+.btn-bufunfa {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: .6rem 1rem;
+  width: 100%;
+  transition: filter .2s;
+}
+.btn-bufunfa:hover { filter: brightness(.9); }
+
+/* link cadastro */
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.register-link:hover { text-decoration: underline; }
+
+/* evita que títulos quebrem letra por letra */
+.auth-card h1, .auth-card h2, .auth-card h3 {
+  white-space: normal;
+  word-break: keep-all;
+}
+
+/* ===== Centralização total de Login e Cadastro ===== */
+.auth-wrap {
+  min-height: 100vh;               /* ocupa a tela toda */
+  display: flex;
+  align-items: center;             /* centraliza verticalmente */
+  justify-content: center;         /* centraliza horizontalmente */
+  background-color: var(--bg);
+  padding: 2rem 1rem;              /* respiro nas laterais */
+}
+
+/* garante que o card não fique grudado no topo */
+.auth-card {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  margin: auto;                    /* reforço de centralização */
+}
+.auth-card {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  margin: auto;
+}

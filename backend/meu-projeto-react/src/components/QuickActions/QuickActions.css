@@ -1,0 +1,2 @@
+.QuickActions .qa-btn { background-color: color-mix(in oklab, var(--bg) 85%, var(--fg)); border: 1px solid var(--border); color: var(--accent); border-radius: 12px; padding: 1rem; transition: .3s; }
+.QuickActions .qa-btn:hover { background-color: var(--accent); color: #000; transform: translateY(-3px); }

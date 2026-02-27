@@ -1,0 +1,2 @@
+.Transactions .tx-item { background: transparent; border-bottom: 1px solid var(--border); color: color-mix(in oklab, var(--fg) 85%, var(--bg)); }
+.Transactions .tx-item:last-child { border-bottom: none; }

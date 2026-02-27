@@ -1,0 +1,55 @@
+.transactions-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg);
+  padding: 2rem;
+}
+
+.transactions-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  color: var(--fg);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.title-accent {
+  color: var(--accent);
+  text-align: center;
+  font-weight: 600;
+}
+
+.text-muted-bf {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.form-control, .form-select {
+  background-color: #121212;
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(255, 183, 3, 0.15);
+}
+
+.btn-bufunfa {
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-bufunfa:hover {
+  filter: brightness(0.9);
+}

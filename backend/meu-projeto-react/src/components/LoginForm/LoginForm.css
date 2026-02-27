@@ -1,0 +1,66 @@
+/* ===== Wrapper geral ===== */
+.LoginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;         /* ocupa a tela toda */
+  background-color: var(--bg);
+}
+
+/* ===== Card ===== */
+.LoginForm .card {
+  background-color: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+/* ===== Inputs ===== */
+.login-input {
+  background-color: #121212;
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.login-input::placeholder {
+  color: #bfbfbf;
+}
+
+.login-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(255, 183, 3, 0.15);
+}
+
+/* ===== Botão principal ===== */
+.btn-bufunfa {
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.btn-bufunfa:hover {
+  filter: brightness(0.9);
+}
+
+/* ===== Link de cadastro ===== */
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

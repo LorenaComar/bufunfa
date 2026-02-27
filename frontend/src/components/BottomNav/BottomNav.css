@@ -1,0 +1,34 @@
+.BottomNav {
+  background-color: rgba(15, 15, 15, 0.95);
+  border-top: 2px solid var(--accent);
+  backdrop-filter: blur(6px);
+  padding: 0.5rem 0;
+}
+
+.nav-item-bf {
+  color: #aaa;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  gap: 0.25rem;
+  padding: 0.4rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-item-bf svg {
+  margin-bottom: 0.1rem;
+}
+
+.nav-item-bf.active,
+.nav-item-bf:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.nav-item-bf span {
+  font-weight: 500;
+  line-height: 1;
+}

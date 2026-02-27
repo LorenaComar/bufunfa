@@ -1,0 +1,68 @@
+/* ========== Header Banco Bufunfa ========== */
+.Header {
+  background-color: var(--card);
+  border-bottom: 2px solid var(--accent);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.header-user i {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.btn-logout {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.btn-logout:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .header-user {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

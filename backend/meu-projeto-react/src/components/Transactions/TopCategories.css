@@ -1,0 +1,35 @@
+.TopCategories .tc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tc-card { padding: 14px; }
+
+.tc-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.tc-bar {
+  height: 8px;
+  width: 100%;
+  background: color-mix(in oklab, var(--bg) 80%, var(--fg));
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tc-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width .4s ease;
+}
+
+@media (min-width: 768px) {
+  .TopCategories .tc-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,132 @@
+/* ===== Banco Bufunfa - Tema Escuro Fixo ===== */
+:root {
+  --bg: #000;
+  --card: #1a1a1a;
+  --border: #333;
+  --fg: #f4f4f4;
+  --muted: #aaa;
+  --accent: #ffb703;
+}
+
+/* ===== Base ===== */
+html, body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ===== Cards ===== */
+.bufunfa-card-base {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  color: var(--fg);
+}
+
+/* ===== Textos ===== */
+.title-accent { 
+  color: var(--accent); 
+  font-weight: 600;
+}
+.text-muted-bf { 
+  color: var(--muted); 
+}
+
+/* ===== Centralização geral ===== */
+.container-int {
+  padding: 1rem;
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+/* ===== Login e Cadastro ===== */
+.auth-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  padding: 1rem;
+}
+
+.auth-card {
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+.login-input {
+  background-color: #121212;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.login-input::placeholder { 
+  color: #bfbfbf; 
+}
+
+.login-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(255, 183, 3, 0.15);
+  outline: none;
+}
+
+.btn-bufunfa {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: filter 0.2s;
+}
+
+.btn-bufunfa:hover { 
+  filter: brightness(.9); 
+}
+.btn-bufunfa:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register-link:hover { 
+  text-decoration: underline; 
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .container-int {
+    padding: 0.5rem;
+    padding-bottom: 80px;
+  }
+  
+  .auth-card {
+    padding: 1.5rem;
+  }
+}

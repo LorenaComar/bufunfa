@@ -1,0 +1,9 @@
+.BalanceCard .balance-value { 
+  font-size: 2rem; 
+  font-weight: 700; 
+  color: var(--fg); 
+}
+.BalanceCard .balance-info { 
+  color: var(--muted); 
+  font-size: .9rem; 
+}

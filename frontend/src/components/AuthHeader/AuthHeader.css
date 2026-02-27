@@ -1,0 +1,11 @@
+.AuthHeader {
+  background: linear-gradient(90deg, rgba(0,0,0,.9), rgba(28,28,28,.9));
+  border-bottom: 2px solid var(--accent);
+  padding: 1.5rem 0;
+}
+.auth-title {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
