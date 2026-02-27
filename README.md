@@ -96,7 +96,7 @@ Aplicação SPA estruturada com:
 
 1. Configure o arquivo `application.properties` com suas credenciais locais:
 
-```properties
+`properties
 spring.datasource.url=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
 spring.datasource.username=SEU_USUARIO
 spring.datasource.password=SUA_SENHA
@@ -105,17 +105,19 @@ spring.jpa.show-sql=true
 
 2. Execute:
 
-mvn spring-boot:run
+```mvn spring-boot:run```
 
 Backend disponível em:
 
-http://localhost:8080
+```http://localhost:8080```
 
 
 ### Frontend
 
-npm install
+```
+npm install 
 npm run dev
+```
 
 Frontend disponível em:
 
